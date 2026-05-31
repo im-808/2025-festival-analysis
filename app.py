@@ -65,7 +65,7 @@ fig.add_trace(
 )
 
 fig.update_layout(
-    title="지역별 축제 수 및 방문객 수",
+    title="2025 지역별 축제 수 및 방문객 수",
     yaxis=dict(title="축제 수(개)"),
     yaxis2=dict(title="방문객 수(명)", overlaying="y", side="right"),
     height=600
