@@ -6,7 +6,7 @@ from pathlib import Path
 
 st.set_page_config(page_title="지역별 축제 및 방문객 분석", page_icon="🎉", layout="wide")
 
-st.title("🎉 지역별 축제 수 및 방문객 수 분석 대시보드")
+st.title("🎉 2025 대한민국 지역별 축제 수 및 방문객 수 분석 대시보드")
 st.markdown("---")
 
 db_path = "festival.db"
@@ -42,7 +42,7 @@ region_order = [
 df["지역"] = pd.Categorical(df["지역"], categories=region_order, ordered=True)
 df = df.sort_values("지역")
 
-st.header("📊 지역별 축제 수 및 방문객 수")
+st.header("📊 전국 지역별 축제 수 및 방문객 수 비교")
 
 fig = go.Figure()
 
